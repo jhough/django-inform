@@ -1,7 +1,7 @@
 Inform
 ==============================
 
-An esimple Django used to show deployment.
+A simple Django app used to show deployment.
 
 
 LICENSE: BSD
