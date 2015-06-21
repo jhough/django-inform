@@ -20,6 +20,7 @@ urlpatterns = [
 
     # Your stuff: custom urls includes go here
     url(r'^blog/', include("inform.blog.urls", namespace="blog")),
+    url(r'^polls/', include("inform.polls.urls", namespace="polls")),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

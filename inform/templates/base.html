@@ -43,6 +43,8 @@
 
           <li><a href="{% url 'blog:list' %}">Blog</a></li>
 
+          <li><a href="{% url 'polls:list' %}">Polls</a></li>
+
           {% if request.user.is_authenticated %}
             <li><a href="{% url 'users:detail' request.user.username  %}">{% trans "My Profile" %}</a></li>
             <li><a href="{% url 'account_logout' %}">{% trans "Logout" %}</a></li>

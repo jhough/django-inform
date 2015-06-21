@@ -46,6 +46,7 @@ LOCAL_APPS = (
     'inform.users',  # custom users app
     # Your stuff: custom apps go here
     'inform.blog',
+    'inform.polls',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
