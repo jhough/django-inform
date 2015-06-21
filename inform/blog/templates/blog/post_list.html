@@ -1,0 +1,19 @@
+{% extends 'blog/base.html' %}
+
+{% load url from future %}
+{% load i18n %}
+
+{% block content %}
+    <h1>{% trans "Blog Posts" %}</h1>
+
+    {% if object_list %}
+        <ul>
+        {% for post in object_list %}
+            <li><a href="{% url 'blog:detail' post.id  %}">{{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>There are no posts.</p>
+    {% endif %}
+
+{% endblock %}
